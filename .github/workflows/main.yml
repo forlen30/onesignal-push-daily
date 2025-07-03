@@ -2,9 +2,11 @@ name: Daily Push Notification
 
 on:
   schedule:
-    - cron: '0 17 * * *'  # เที่ยงคืนเวลาไทย (UTC+7)
-  workflow_dispatch:      # สำหรับกดรันเองได้ด้วย
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
 
+permissions:
+  contents: read
 jobs:
   send-push:
     runs-on: ubuntu-latest
