@@ -2,7 +2,7 @@ name: Daily Push Notification
 
 on:
   schedule:
-    - cron: '*/10 * * * *'   # ทุก 10 นาที (UTC)
+    - cron: '0 17 * * *'   # 17 UTC = 00:00 Thailand time (GMT+7)
   workflow_dispatch:
 
 permissions:
