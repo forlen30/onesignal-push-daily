@@ -2,7 +2,7 @@ name: Daily Push Notification
 
 on:
   schedule:
-    - cron: '*/2 * * * *'  # รันทุก 2 นาที (UTC)
+    - cron: '*/2 * * * *'
   workflow_dispatch:
 
 permissions:
