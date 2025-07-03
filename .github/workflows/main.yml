@@ -2,12 +2,11 @@ name: Daily Push Notification
 
 on:
   schedule:
-    - cron: '*/2 * * * *'
+    - cron: '*/2 * * * *'   # ทุก 2 นาที (UTC)
   workflow_dispatch:
 
 permissions:
   contents: read
-
 jobs:
   send-push:
     runs-on: ubuntu-latest
@@ -20,8 +19,5 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install dependencies
-        run: npm install node-fetch
-
       - name: Run push script
-        run: node send-push.js
+        run: node send-push.mjs
