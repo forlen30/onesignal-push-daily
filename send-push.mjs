@@ -1,3 +1,5 @@
+import fetch from 'node-fetch';
+
 const ONESIGNAL_APP_ID = '68a7a06b-4814-4d41-987a-f14c5631c5d5';
 const ONESIGNAL_API_KEY = 'os_v2_app_nct2a22icrgudgd26fgfmmof2u4zcrzd22zuwwvc3oxv2265hqu4ylndlpvhgq3eeq42ntpwiea2e23lonnbn5gadddmsc4pzvqm3va';
 
